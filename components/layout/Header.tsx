@@ -39,9 +39,9 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t px-6 py-4 space-y-4 animate-slideDown">
+        <div className="md:hidden bg-white border-t px-6 py-4 flex flex-col space-y-4 animate-slideDown w-full">
           <Link href="/about" onClick={() => setOpen(false)}>About</Link>
           <Link href="/exhibitions" onClick={() => setOpen(false)}>Exhibitions</Link>
           <Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
